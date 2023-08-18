@@ -1,4 +1,5 @@
 enum SymbologyType {
+  CUSTOM = 10,
   /** Code 11 */
   CODE11 = 1,
   /** Standard Code 2 of 5 */
