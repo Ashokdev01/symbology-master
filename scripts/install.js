@@ -1,10 +1,8 @@
 const replace = require('replace-in-file')
-// const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const fetch = require('node-fetch')
 const tar = require('tar')
 const path = require('path')
 const fs = require('fs')
-// import { rimraf } from 'rimraf';
 const rimraf = require('rimraf')
 const patches = require('./patches')
 const { zintVersion } = require('../package.json')
@@ -86,7 +84,7 @@ const cloneAndPatch = async() => {
 
   console.log('Removing any existing .zint directory...')
 
-  await rimraf(path.join(__dirname, '../.zint'), downloadAndExtract)
+   rimraf(path.join(__dirname, '../.zint'), downloadAndExtract)
 }
 
 cloneAndPatch()

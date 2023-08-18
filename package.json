@@ -13,8 +13,8 @@
     "build": "tsc && npm run binary:rebuild",
     "binary:install": "node-pre-gyp install --fallback-to-build",
     "binary:rebuild": "node-pre-gyp rebuild package",
-    "install": "node ./scripts/install.cjs && npm run binary:install",
-    "install:rebuild": "rimraf bin && node ./scripts/install.cjs && npm run binary:rebuild",
+    "install": "node ./scripts/install.js && npm run binary:install",
+    "install:rebuild": "rimraf bin && node ./scripts/install.js && npm run binary:rebuild",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
