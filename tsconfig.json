@@ -9,8 +9,8 @@
     "strict": true,
     "types": [
       "node",
-      "jest",
-      "jest-image-snapshot"
+//      "jest",
+//      "jest-image-snapshot"
     ]
   },
   "include": [

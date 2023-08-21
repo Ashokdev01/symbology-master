@@ -11,9 +11,9 @@
     "test:unit": "jest src --collectCoverage true",
     "test": "npm run test:unit && npm run test:e2e",
     "build": "tsc && npm run binary:rebuild",
-    "binary:install": "node-pre-gyp install --target_arch=x64 --target_platform=linux --fallback-to-build",
-    "binary:rebuild": "node-pre-gyp --target_arch=x64 --target_platform=linux rebuild package",
-    "install": "node ./scripts/install.js && npm run binary:install",
+    "binary:install": " node-pre-gyp --target_arch=x86_64 --target_platform=linux install --fallback-to-build",
+    "binary:rebuild": "node-pre-gyp --target_arch=x86_64 --target_platform=linux rebuild package",
+    "install": " node ./scripts/install.js && npm run binary:install",
     "install:rebuild": "rimraf bin && node ./scripts/install.js && npm run binary:rebuild",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
