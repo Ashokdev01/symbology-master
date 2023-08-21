@@ -1,6 +1,6 @@
 {
-  "name": "symbology",
-  "version": "3.0.13",
+  "name": "@kikani.ishvar92/symbology_master",
+  "version": "3.0.14",
   "description": "🔖 Generates 1D, 2D, and composite barcodes in png, svg, or eps formats. Supports 50+ symbologies.",
   "scripts": {
     "ye": "node ./test.js",
@@ -11,8 +11,8 @@
     "test:unit": "jest src --collectCoverage true",
     "test": "npm run test:unit && npm run test:e2e",
     "build": "tsc && npm run binary:rebuild",
-    "binary:install": " node-pre-gyp --target_arch=x86_64 --target_platform=linux install --fallback-to-build",
-    "binary:rebuild": "node-pre-gyp --target_arch=x86_64 --target_platform=linux rebuild package",
+    "binary:install": "node-pre-gyp --target_arch=x64 --target_platform=linux install --fallback-to-build",
+    "binary:rebuild": "node-pre-gyp --target_arch=x64 --target_platform=linux rebuild package",
     "install": " node ./scripts/install.js && npm run binary:install",
     "install:rebuild": "rimraf bin && node ./scripts/install.js && npm run binary:rebuild",
     "docs:dev": "vuepress dev docs",
@@ -20,11 +20,11 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "author": "Josh Shor <https://github.com/jshor>",
+  "author": "",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jshor/symbology.git"
+    "url": "git+https://github.com/jshor/symbology.git"
   },
   "homepage": "https://symbology.dev",
   "keywords": [
@@ -118,5 +118,12 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "zintVersion": "89518c4"
+  "zintVersion": "89518c4",
+  "bugs": {
+    "url": "https://github.com/jshor/symbology/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  }
 }
