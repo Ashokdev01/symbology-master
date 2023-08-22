@@ -1,6 +1,6 @@
 {
-  "name": "@kikani.ishvar92/symbology_master",
-  "version": "3.0.14",
+  "name": "@ashok_gujjar92/symbology18",
+  "version": "3.0.15",
   "description": "🔖 Generates 1D, 2D, and composite barcodes in png, svg, or eps formats. Supports 50+ symbologies.",
   "scripts": {
     "ye": "node ./test.js",
@@ -20,7 +20,7 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "author": "",
+  "author": "Ashok gujjar",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
