@@ -1,5 +1,5 @@
 {
-  "name": "@ashok_gujjar92/symbology18",
+  "name": "@ashok_gujjar92/symbology_18",
   "version": "3.0.15",
   "description": "🔖 Generates 1D, 2D, and composite barcodes in png, svg, or eps formats. Supports 50+ symbologies.",
   "scripts": {
