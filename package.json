@@ -1,6 +1,6 @@
 {
   "name": "@ashok_gujjar92/symbology_18",
-  "version": "3.0.15",
+  "version": "3.0.14",
   "description": "🔖 Generates 1D, 2D, and composite barcodes in png, svg, or eps formats. Supports 50+ symbologies.",
   "scripts": {
     "ye": "node ./test.js",
@@ -10,17 +10,17 @@
     "test:e2e": "rimraf test/e2e/__rendered__/* && jest test/e2e",
     "test:unit": "jest src --collectCoverage true",
     "test": "npm run test:unit && npm run test:e2e",
-    "build": "npm run binary:rebuild",
-    "binary:install": "node-pre-gyp configure install --fallback-to-build",
-    "binary:rebuild": "node-pre-gyp configure rebuild package",
-    "install": "node ./scripts/install.js && npm run binary:install",
+    "build": "tsc && npm run binary:rebuild",
+    "binary:install": "node-pre-gyp install --fallback-to-build",
+    "binary:rebuild": "node-pre-gyp rebuild package",
+    "install": " node ./scripts/install.js && npm run binary:install",
     "install:rebuild": "rimraf bin && node ./scripts/install.js && npm run binary:rebuild",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "author": "Ashok gujjar",
+  "author": "",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@mapbox/node-pre-gyp": "^1.0.10",
-    "nan": "^2.17.0",
+    "nan": "^2.14.2",
     "node-fetch": "2",
     "pngjs": "^6.0.0",
     "replace-in-file": "^6.3.5",
